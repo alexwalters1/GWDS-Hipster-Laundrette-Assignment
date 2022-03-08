@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Reservations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/BWLogo.png">
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+						<div id="logo">
+							<h1><a href="index.html">Reservations</a></h1>
+							<p>Use the form below to either reserve a table or a washer or dryer!</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="left-sidebar.html">Gallery</a></li>
+								<li class="current"><a href="right-sidebar.html">Reservations</a></li>
+								<li><a href="no-sidebar.html">Amendities</a></li>
+								<li><a href="socialmedia.html">Social Media</a></li>
+							</ul>
+						</nav>
+
+				</section>
+
+			<!-- Main -->
+				<div id="main" class="wrapper style1">
+					<div class="title">Book here</div>
+					<div class="container">
+
+						<!-- Content -->
+							<div id="content">
+								<section>
+									<form class="reservationForm" id="reservationForm">
+										<label for="reservationType">Reservation Type:</label>
+										<input list="optionsForRes">
+										<datalist id="optionsForRes">
+											<option value="Table Reservation"></option>
+											<option value="Washer/Dryer Reservation"></option>
+										</datalist>
+	
+										<label for="name">Name:</label>
+										<input type="text" id="name" required>
+	
+										<label for="phone">Phone:</label>
+										<input type="tel" id="phone">
+	
+	
+										<label for="email">Email:</label>
+										<input type="email" id="email" required>
+	
+										<label for="date">Date:</label>
+										<input type="date" id="date" value="Select Date" min="06-03-2022" max="06-03-2023" required>
+	
+										<label for="time">Time:</label>
+										<input type="time" id="time" min="09:00" max="18:00" required>
+	
+										<label for="attendeesNo">No. of attendees:</label>
+										<input type="number" id="attendeesNo" name="quantity" min="1" max="6" required></form>
+
+										<ul class="actions">
+											<li><input type="submit" class="style1" value="Submit" onclick="submitMainForm()"></li>
+											<li><input type="reset" class="style2" value="Reset" onclick="resetMainForm()"></li>
+										</ul>
+
+									</form>
+								</section>
+							</div>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">The boring bit</div>
+				<div class="container">
+					<header class="style1">
+						<h2>Any questions, queries or enquiries? Use our form below to email us directly.</h2>
+						<p>
+							Below you can find the aformentioned email form, <br>as well as our contact information and opening hours.
+						</p>
+					</header>
+					<div class="row">
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact Form -->
+								<section>
+									<form method="post" action="#">
+										<div class="row gtr-50">
+											<div class="col-6 col-12-small">
+												<input type="text" name="name" id="contact-name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-small">
+												<input type="text" name="email" id="contact-email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" class="style1" value="Send" /></li>
+													<li><input type="reset" class="style2" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+
+						</div>
+						<div class="col-6 col-12-medium">
+
+							<!-- Contact -->
+								<section class="feature-list small">
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-home">Opening Hours and Address</h3>
+												<p>
+													Brainwash<br />
+													38 Park St.<br />
+													Brisol, BS1 5JG<br>
+													Mon-Fri <strong>9am-5pm</strong>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-comment">Social</h3>
+												<p>
+													<a href="#">@getbrainwashed</a><br />
+													<a href="#">linkedin.com/brainwashltd</a><br />
+													<a href="#">facebook.com/brainwashbristol</a>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-envelope">Email</h3>
+												<p>
+													<a>info@getbrainwashed.co.uk</a>
+												</p>
+											</section>
+										</div>
+										<div class="col-6 col-12-small">
+											<section>
+												<h3 class="icon solid fa-phone">Phone</h3>
+												<p>
+													0117 845 765
+												</p>
+											</section>
+										</div>
+									</div>
+								</section>
+
+						</div>
+					</div>
+					<div id="copyright">
+						<ul>
+							<li>&copy; Brainwash LTD</li><li>Design: <a href="http://html5up.net">HTML5 UP, Edited by Alex Walters</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+	</div>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+			<script>
+				function submitMainForm() {
+					alert("Sucessfully sumbitted. Check your E-Mail!");
+					return true;
+				}
+
+				function resetMainForm() {
+					document.getElementById("reservationForm").reset();
+				}
+			</script>
+
+	</body>
+</html>
